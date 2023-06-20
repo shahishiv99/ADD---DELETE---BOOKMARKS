@@ -74,6 +74,100 @@ a:hover {
   margin-right: 20px;
 }
 
+/* Modal */
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  max-width: 95%;
+  width: 400px;
+  animation: modalopen 1s;
+}
+
+.close-icon {
+  float: right;
+  font-size: 24px;
+  position: relative;
+  top: 5px;
+  right: 13px;
+  cursor: pointer;
+  color: white;
+}
+
+.modal-header {
+  background: #702ada;
+  color: white;
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.modal-content {
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+/* Form-Group */
+
+.form-group {
+  height: 55px;
+}
+.form-input {
+  width: 97%;
+  padding: 5px;
+  border: 2px solid #702ada;
+  border-radius: 5px;
+  display: block;
+  outline: none;
+}
+
+.form-label {
+  display: block;
+  color: #702ada;
+  font-weight: bold;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  background: #702ada;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  filter: brightness(130%);
+}
+button:focus {
+  outline: none;
+}
+
 @media only screen and (max-width: 370px) {
   .container {
     flex-direction: column;
