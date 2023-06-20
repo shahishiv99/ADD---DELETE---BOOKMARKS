@@ -97,6 +97,14 @@ a:hover {
   animation: modalopen 1s;
 }
 
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .close-icon {
   float: right;
   font-size: 24px;
@@ -141,14 +149,6 @@ h3 {
   display: block;
   color: #702ada;
   font-weight: bold;
-}
-@keyframes modalopen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 button {
